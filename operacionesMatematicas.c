@@ -16,7 +16,6 @@
     printf("el resultado de la operacion es: %.1f", res);
 
 
-
     return 0;
     }
 
