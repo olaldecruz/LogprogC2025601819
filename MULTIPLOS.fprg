@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="MULTIPLOS"/>
+        <attribute name="authors" value="blanca estela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 08:05:03 p. m."/>
+        <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzo1OTowOSBwLiBtLjszNzg2"/>
+        <attribute name="edited" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswODowNTowMyBwLiBtLjsxOzM4ODA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <input variable="num"/>
+            <if expression="num%2==0">
+                <then>
+                    <output expression="&quot;(multiplo de 2)&quot;" newline="True"/>
+                    <if expression="num%3==0">
+                        <then>
+                            <output expression="&quot;(multiplo de 3)&quot;" newline="True"/>
+                            <if expression="num%5==0">
+                                <then>
+                                    <output expression="&quot;(multiplo de 5)&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

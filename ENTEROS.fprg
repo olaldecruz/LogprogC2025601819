@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ENTEROS"/>
+        <attribute name="authors" value="blanca estela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 07:58:50 p. m."/>
+        <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzo1NTo0MSBwLiBtLjszNzc4"/>
+        <attribute name="edited" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzo1ODo1MCBwLiBtLjsxOzM4ODk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <input variable="n"/>
+            <if expression="n%2=0">
+                <then>
+                    <output expression="&quot;(PAR)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;(IMPAR)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

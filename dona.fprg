@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="dona"/>
+        <attribute name="authors" value="blanca estela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 07:33:09 p. m."/>
+        <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzoxNzo0OSBwLiBtLjszNzg0"/>
+        <attribute name="edited" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzozMzowOSBwLiBtLjsxOzM4ODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dona" type="Integer" array="False" size=""/>
+            <assign variable="dona" expression="0"/>
+            <input variable="dona"/>
+            <if expression="dona&gt;30">
+                <then>
+                    <output expression="&quot;(10)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;(8)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

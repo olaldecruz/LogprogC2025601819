@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CALIFICACION"/>
+        <attribute name="authors" value="blanca estela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 07:54:57 p. m."/>
+        <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzo0OTo0NSBwLiBtLjszNzg1"/>
+        <attribute name="edited" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzo1NDo1NyBwLiBtLjsxOzM4OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="calificacion" type="Integer" array="False" size=""/>
+            <assign variable="calificacion" expression="0"/>
+            <input variable="calificacion"/>
+            <if expression="calificacion&gt;6">
+                <then>
+                    <output expression="&quot;(APROBADO)&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;(REPROBADO)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

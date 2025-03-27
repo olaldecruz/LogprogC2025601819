@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bisiesto"/>
+        <attribute name="authors" value="blanca estela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 07:47:20 p. m."/>
+        <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzozMzoyMiBwLiBtLjszNzcz"/>
+        <attribute name="edited" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswNzo0NzoyMCBwLiBtLjsxOzM4ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a&#241;o" type="Integer" array="False" size=""/>
+            <assign variable="a&#241;o" expression="0"/>
+            <input variable="a&#241;o"/>
+            <if expression="a&#241;o%100=0">
+                <then>
+                    <if expression="a&#241;o%400=0">
+                        <then>
+                            <output expression="&quot;(BISIESTO)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;(NO BISIESTO)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="a&#241;o%4=0">
+                        <then>
+                            <output expression="&quot;(BISIESTO)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;(NO BISIESTO)&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
