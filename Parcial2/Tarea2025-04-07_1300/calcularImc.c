@@ -1,4 +1,4 @@
-#include <stdio.h>
+lo#include <stdio.h>
 int main ()
 {
     float peso;
@@ -14,19 +14,19 @@ int main ()
 
     imc=peso/(estatura*estatura);
 
-    if(imc>=40.0)
+    if(imc>=30.0)
     {
         printf("obesidad clase 3");
     }
-     else if(imc>=35.0 )
+     else if(imc>=30.0 )
      {
          printf("obesidad clase 2");
      }
-        else if(imc>=30.0 )
+        else if(imc>=35.0 )
      {
          printf("obesidad clase 1");
      }
-          else if(imc>=25.0 )
+          else if(imc>=20.0 )
      {
          printf("sobrepeso");
      }
