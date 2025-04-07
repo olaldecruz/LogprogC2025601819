@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="2.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
         <attribute name="name" value="pizza vegetariana"/>
-        <attribute name="authors" value="blanca estela"/>
+        <attribute name="authors" value="blanca olalde"/>
         <attribute name="about" value=""/>
         <attribute name="saved" value="2025-04-06 08:58:27 p. m."/>
         <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wNC0wNjswODozODoxMCBwLiBtLjszNzc1"/>
@@ -11,8 +11,8 @@
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="pizzavegetariana" type="String" array="False" size=""/>
-            <declare name="ingredientes" type="String" array="False" size=""/>
+            <declare="pizzavegetariana" type="String" array="False" size=""/>
+            <declare="ingredientes" type="String" array="False" size=""/>
             <output expression="&quot;&#191;quieres una pizza vegetariana?&quot;" newline="True"/>
             <input variable="pizzavegetariana"/>
             <if expression="pizzavegetariana==&quot;si&quot;">
