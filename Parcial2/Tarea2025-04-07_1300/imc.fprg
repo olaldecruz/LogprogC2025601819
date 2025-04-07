@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="imc"/>
+        <attribute name="authors" value="blanca estela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-06 09:51:32 p. m."/>
+        <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wNC0wNjswOToyNzo1NyBwLiBtLjszNzg1"/>
+        <attribute name="edited" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wNC0wNjswOTo1MTozMiBwLiBtLjsxOzM4ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="peso" type="Real" array="False" size=""/>
+            <declare name="estatura" type="Real" array="False" size=""/>
+            <output expression="&quot;peso en kg&quot;" newline="True"/>
+            <input variable="peso"/>
+            <output expression="&quot;estatura en m&quot;" newline="True"/>
+            <input variable="estatura"/>
+            <if expression="peso(estatura*estatura)&gt;=40.0">
+                <then>
+                    <output expression="&quot;obesidad clase 3&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="peso(estatura*estatura)&gt;=35.0">
+                        <then>
+                            <output expression="&quot;obesidad clase 2&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="peso(estatura*estatura)&gt;=30.0">
+                                <then>
+                                    <output expression="&quot;obesidad clase 1&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="peso/(estatura*estatura)&gt;=25.0">
+                                        <then>
+                                            <output expression="&quot;sobrepeso&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="peso/(estatura*estatura)&gt;=18.5">
+                                                <then>
+                                                    <output expression="&quot;normal&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="peso/(estatura*estatura)&gt;=0.0">
+                                                        <then>
+                                                            <output expression="&quot;bajo peso&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;error&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
